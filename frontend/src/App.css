@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+.font-display { font-family: 'Rubik', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+
+.hero {
+	min-height: 90vh;
+}
+
+.hero-overlay {
+	backdrop-filter: blur(2px);
+}
+
+.button {
+	background: white;
+	color: black;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	font-weight: 600;
+}
+
+.button:hover { opacity: 0.95 }
+
+.button.signup {
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.12);
+	color: white;
+}
+
+@media (max-width: 640px) {
+	.hero { min-height: 48vh }
+}
